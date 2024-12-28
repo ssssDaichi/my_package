@@ -1,3 +1,0 @@
-[console_scripts]
-datetime_publisher = mypkg.datetime_publisher:main
-
