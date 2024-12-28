@@ -19,7 +19,7 @@ source install/setup.bash
 ### 使用方法
 日時出力ノードを実行するには以下を使用してください
 ```
-ros2 run my_package talker
+ros2 run mypkg datetime_publisher
 ```
 ### ライセンス
 このプロジェクトは [Apache License 2.0](LICENSE) のもとで公開されています。
