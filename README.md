@@ -53,7 +53,7 @@ ros2 run mypkg datetime_publisher
 ## 動作環境
 #### ソフトウェア
 Python
-テスト済みバージョン3.7~3.12
+テスト済みバージョン3.8以降
 #### テスト環境
 ubuntu 22.04 LTS
 #### ライセンス
