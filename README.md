@@ -9,7 +9,7 @@ ROS 2環境がインストールされていることを確認してください
 リポジトリをクローンします
 ```
 git clone https://github.com/ssssDaichi/robosys_kabai2.git
-cd robosys_kabai2
+cd ~/ros2_ws
 ```
 ビルドとセットアップ
 ```
