@@ -1,6 +1,10 @@
 build/
 install/
 log/
+<<<<<<< HEAD
 ros2_setup_scripts/
 src/
 
+=======
+.DS_Store
+>>>>>>> Add .gitignore to exclude unnecessary files
