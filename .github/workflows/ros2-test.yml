@@ -1,0 +1,36 @@
+name: build-and-test
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  setup-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Setup ROS 2 (Humble)
+      uses: ros-tooling/setup-ros@v0.2
+      with:
+        required-ros-distributions: humble
+
+    - name: Install dependencies
+      run: |
+        sudo apt-get update
+        rosdep install --from-paths src --ignore-src -r -y
+
+    - name: Build workspace
+      run: |
+        colcon build
+
+    - name: Run tests
+      run: |
+        colcon test
+        colcon test-result
