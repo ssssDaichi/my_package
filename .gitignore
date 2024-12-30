@@ -3,4 +3,6 @@ install/
 log/
 ros2_setup_scripts/
 .DS_Store
-
+*.egg-info/
+__pycache__/
+*.pyc
